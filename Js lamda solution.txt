@@ -1,0 +1,127 @@
+1. Sum of Two Numbers: Write a lambda function to add two numbers.
+
+Sol:   let sum = (a,b) => a+b;
+
+       console.log(sum(1,2));
+
+=======================================================================================================================================================================
+
+2. Square of a Number: Write a lambda function to find the square of a given number
+
+Sol.   let square = (a) => a*a;
+
+       console.log(square(5));
+
+=======================================================================================================================================================================
+
+3. Check Even or Odd: Write a lambda function to check if a number is even or odd.
+
+Sol.  let check = (num) => ( num%2==0 ? "even" : "odd" );
+
+      console.log(check(5));
+
+=======================================================================================================================================================================
+
+4. Find Maximum of Two Numbers: Write a lambda function to find the maximum of two numbers.
+
+Sol.  let maxmin = (a,b) => (a > b ? a : b);
+
+      console.log(maxmin(3,5));
+      console.log(maxmin(50,30));
+
+=======================================================================================================================================================================
+
+5. Find Minimum of Two Numbers: Write a lambda function to find the minimum of two numbers.
+
+Sol. let maxmin = (a,b) => (a < b ? a : b);
+
+     console.log(maxmin(3,5));
+     console.log(maxmin(50,30));
+
+=======================================================================================================================================================================
+
+6. Power Calculation: Write a lambda function to calculate the power of a number (base, exponent).
+
+Sol. let power = (base,exponent) => Math.pow(base,exponent);
+
+     console.log(power(2,3)); 
+
+=======================================================================================================================================================================
+
+7. Convert Fahrenheit to Celsius: Write a lambda function to convert temperature from Fahrenheit to Celsius.
+
+Sol. let celsius = (fahrenheit) => ((fahrenheit - 32) * 5) / 9;
+
+     console.log(celsius(32))  
+     // Output: 0°C
+
+=======================================================================================================================================================================
+
+8. Check Leap Year: Write a lambda function to check if a year is a leap year or not.
+
+Sol. let leapYear = (year) => (year%4 === 0 && (year%100 !== 0 || year%400 === 0)) ? "Leap Year" : "Not Leap year";
+
+     console.log(leapYear(2000));
+     console.log(leapYear(2024));
+
+=======================================================================================================================================================================
+
+9. Find Factorial Using Recursion: Write a recursive lambda function to find the factorial of a number.
+
+Sol.  let factorial = (num) => num <= 1 ? 1 : num * factorial(num - 1);
+
+      console.log(factorial(5)); // Output: 120
+      console.log(factorial(6)); // Output: 720 
+     
+=======================================================================================================================================================================
+
+10. Reverse a String: Write a lambda function to reverse a given string.
+
+Sol. let reverseString = (str) => str.split('').reverse().join('');
+
+     console.log(reverseString("sahid"));  // output: dihas
+
+=======================================================================================================================================================================
+
+11. Check Palindrome String: Write a lambda function to check if a given string is a palindrome.
+
+Sol. let palidrome = (str) => str === str.split('').reverse().join('');
+
+     console.log(palidrome("sahas")); // output true
+     console.log(palidrome("sahid")); // output false
+
+=======================================================================================================================================================================
+
+12. Find the Absolute Value: Write a lambda function to return the absolute value of a given number.
+
+Sol. let absolute = (num) => Math.abs(num);
+
+     console.log(absolute(-5)); // output: 5
+     console.log(absolute(10)); // output: 10
+
+=======================================================================================================================================================================
+
+13. Check Divisibility by 5: Write a lambda function to check if a number is divisible by 5.
+
+Sol. let divisible = (num) => num%5 === 0 ;
+
+     console.log(divisible(12)); // output: false
+     console.log(divisible(10)); // output: true
+
+=======================================================================================================================================================================
+
+14. Find the Length of a String: Write a lambda function to find the length of a given string.
+
+Sol. let lengths = (str) => str.length;
+
+    console.log(lengths("sahid"));  // output: 5
+
+=======================================================================================================================================================================
+
+15. Calculate Simple Interest: Write a lambda function to calculate simple interest (P, R, T).
+
+Sol. let simpleInterest = (P, R, T) => (P * R * T) / 100;
+
+     console.log(simpleInterest(100,10,5)); // output: 50
+ 
+=======================================================================================================================================================================
